@@ -2,7 +2,7 @@
 
 ## Versioning
 
-This library tries to follows [SemVer v2.0.0](http://semver.org/).
+This library tries to follow [SemVer v2.0.0](http://semver.org/).
 
 ## Change Log
 
