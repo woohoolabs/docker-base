@@ -10,6 +10,4 @@ cat > /etc/apt/sources.list.d/mysql.list <<EOF
 deb http://repo.mysql.com/apt/debian/ jessie mysql-5.7
 EOF
 
-apt-get update
-
-apt-get -y --force-yes install mysql-client
+apt-get -y install mysql-client
