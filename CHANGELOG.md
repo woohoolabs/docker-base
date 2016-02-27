@@ -1,5 +1,12 @@
 # PHP
 
+## 1.0.4 - unreleased
+
+- Added PHPCBF
+- Removed PHPLoc
+- Removed Phing
+- Removed PHPCPD
+
 ## 1.0.3 - 2016-02-27
 
 - Added Bz2 extension
