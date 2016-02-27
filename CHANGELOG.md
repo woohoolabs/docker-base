@@ -1,5 +1,9 @@
 # PHP
 
+## 1.0.3 - 2016-02-27
+
+- Added Bz2 extension
+
 ## 1.0.2 - 2016-02-19
 
 - Added cURL extension
