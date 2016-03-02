@@ -6,6 +6,7 @@
 - Removed PHPLoc
 - Removed Phing
 - Removed PHPCPD
+- Removed Netcat utility
 
 ## 1.0.3 - 2016-02-27
 
