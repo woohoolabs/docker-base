@@ -2,6 +2,8 @@
 
 ## 1.0.4 - unreleased
 
+- Updated PHP to 7.0.4
+- Updated Composer to 1.0.0-beta1
 - Added PHPCBF
 - Removed PHPLoc
 - Removed Phing
