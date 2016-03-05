@@ -1,3 +1,21 @@
+# BEANSTALKD
+
+## 1.0.0 - 2016-03-05
+
+- Initial release
+
+# CODE
+
+## 1.0.0 - 2016-03-05
+
+- Initial release
+
+# GULP
+
+## 1.0.0 - 2016-02-21
+
+- Initial release
+
 # PHP
 
 ## 1.0.4 - unreleased
@@ -24,11 +42,5 @@
 - Added Intl extension
 
 ## 1.0.0 - 2016-02-18
-
-- Initial release
-
-# GULP
-
-## 1.0.0 - 2016-02-21
 
 - Initial release
