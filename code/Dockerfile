@@ -14,6 +14,7 @@ RUN chmod -R ug+x /build && \
 COPY ./bin/* /usr/local/bin/
 RUN chmod +x /usr/local/bin/*
 
+VOLUME ["/var/www"]
 WORKDIR /var/www
 
 CMD /bin/sh -c "checkout"
