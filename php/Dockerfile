@@ -19,7 +19,7 @@ RUN chmod -R ug+x /build && \
 COPY ./bin/* /usr/local/bin/
 RUN chmod +x /usr/local/bin/*
 
-WORKDIR /var/www
+WORKDIR /code
 
 EXPOSE 9000
 CMD php-fpm

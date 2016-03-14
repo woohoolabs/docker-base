@@ -18,5 +18,5 @@ RUN chmod -R ug+x /build && \
     /build/clean.sh && \
     /build/ensure.sh
 
-WORKDIR /var/www
+WORKDIR /code
 CMD npm -v

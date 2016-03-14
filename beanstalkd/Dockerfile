@@ -8,5 +8,7 @@ RUN chmod -R ug+x /build && \
     /build/clean.sh && \
     /build/ensure.sh
 
+WORKDIR /code
+
 EXPOSE 11300
 CMD beanstalkd

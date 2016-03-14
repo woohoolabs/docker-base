@@ -1,10 +1,18 @@
 # BEANSTALKD
 
+## 2.0.0 - 2016-03-14
+
+- Moved working directory to /code
+
 ## 1.0.0 - 2016-03-05
 
 - Initial release
 
 # GULP
+
+## 2.0.0 - 2016-03-14
+
+- Moved working directory to /code
 
 ## 1.0.0 - 2016-02-21
 
@@ -12,8 +20,10 @@
 
 # PHP
 
-## 1.0.4 - unreleased
+## 2.0.0 - 2016-03-14
 
+- Moved working directory to /code
+- Added /cache directory
 - Updated PHP to 7.0.4
 - Updated Composer to 1.0.0-beta1
 - Added Phive to utilities to manage PHAR-s
@@ -36,5 +46,16 @@
 - Added Intl extension
 
 ## 1.0.0 - 2016-02-18
+
+- Initial release
+
+# Postfix
+
+## 2.0.0 - 2016-03-14
+
+- Moved working directory to /code
+- Expose port 26 instead of 25
+
+## 1.0.0 - 2016-03-05
 
 - Initial release
