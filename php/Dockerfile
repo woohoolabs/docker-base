@@ -2,7 +2,7 @@ FROM php:7.0.4-fpm
 MAINTAINER Mate Kocsis <kocsismate@woohoolabs.com>
 
 ENV COMPOSER_HOME /root/composer
-ENV PATH $PATH:/var/www:/var/www/vendor/bin
+ENV PATH $PATH:/code:/code/vendor/bin
 
 COPY ./build /build
 RUN chmod -R ug+x /build && \
