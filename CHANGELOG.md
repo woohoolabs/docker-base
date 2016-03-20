@@ -1,5 +1,9 @@
 # BEANSTALKD
 
+## 2.0.1 - unreleased
+
+- Removed /build directory
+
 ## 2.0.0 - 2016-03-14
 
 - Moved working directory to /code
@@ -10,6 +14,10 @@
 
 # GULP
 
+## 2.0.1 - unreleased
+
+- Removed /build directory
+
 ## 2.0.0 - 2016-03-14
 
 - Moved working directory to /code
@@ -19,6 +27,11 @@
 - Initial release
 
 # PHP
+
+## 2.0.1 - 2016-03-20
+
+- Removed /build directory
+- Added sendmail utility
 
 ## 2.0.0 - 2016-03-14
 

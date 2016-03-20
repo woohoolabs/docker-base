@@ -6,7 +6,8 @@ RUN chmod -R ug+x /build && \
     sync && \
     /build/beanstalkd.sh && \
     /build/clean.sh && \
-    /build/ensure.sh
+    /build/ensure.sh && \
+    rm -R /build
 
 WORKDIR /code
 

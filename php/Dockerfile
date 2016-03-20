@@ -13,9 +13,11 @@ RUN chmod -R ug+x /build && \
     /build/composer.sh && \
     /build/blackfire.sh && \
     /build/mysql.sh && \
+    /build/sendmail.sh && \
     /build/supervisor.sh && \
     /build/clean.sh && \
-    /build/ensure.sh
+    /build/ensure.sh && \
+    rm -R /build
 COPY ./bin/* /usr/local/bin/
 RUN chmod +x /usr/local/bin/*
 

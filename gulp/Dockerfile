@@ -16,7 +16,8 @@ RUN chmod -R ug+x /build && \
     /build/sass.sh && \
     /build/gulp.sh && \
     /build/clean.sh && \
-    /build/ensure.sh
+    /build/ensure.sh && \
+    rm -R /build
 
 WORKDIR /code
 CMD npm -v
