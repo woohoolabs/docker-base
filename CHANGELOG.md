@@ -1,6 +1,6 @@
 # BEANSTALKD
 
-## 2.0.1 - unreleased
+## 2.0.1 - 2016-03-20
 
 - Removed /build directory
 
@@ -14,7 +14,7 @@
 
 # GULP
 
-## 2.0.1 - unreleased
+## 2.0.1 - 2016-03-20
 
 - Removed /build directory
 
