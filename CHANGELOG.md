@@ -61,14 +61,3 @@
 ## 1.0.0 - 2016-02-18
 
 - Initial release
-
-# Postfix
-
-## 2.0.0 - 2016-03-14
-
-- Moved working directory to /code
-- Expose port 26 instead of 25
-
-## 1.0.0 - 2016-03-05
-
-- Initial release
