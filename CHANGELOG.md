@@ -28,6 +28,11 @@
 
 # PHP
 
+## 2.1.0 - 2016-03-22
+
+- Removed sendmail directory
+- Added msmtp utility
+
 ## 2.0.1 - 2016-03-20
 
 - Removed /build directory

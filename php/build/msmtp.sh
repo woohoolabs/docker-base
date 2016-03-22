@@ -2,4 +2,4 @@
 
 export DEBIAN_FRONTEND=noninteractive
 
-apt-get -y install sendmail
+apt-get -y install msmtp

@@ -13,7 +13,7 @@ RUN chmod -R ug+x /build && \
     /build/composer.sh && \
     /build/blackfire.sh && \
     /build/mysql.sh && \
-    /build/sendmail.sh && \
+    /build/msmtp.sh && \
     /build/supervisor.sh && \
     /build/clean.sh && \
     /build/ensure.sh && \
