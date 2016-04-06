@@ -12,6 +12,22 @@ echo -e "\nCOMPOSER"
 echo "------------------------------------------------------------"
 composer --version
 
+echo -e "\nPHP CODE SNIFFER"
+echo "------------------------------------------------------------"
+phpcs --version
+
+echo -e "\nPHP MASS DETECTOR"
+echo "------------------------------------------------------------"
+phpmd --version
+
+echo -e "\nPHPMETRICS"
+echo "------------------------------------------------------------"
+phpmetrics --version
+
+echo -e "\nINISCAN"
+echo "------------------------------------------------------------"
+iniscan --version
+
 echo -e "\nMYSQL CLIENT"
 echo "------------------------------------------------------------"
 mysql -V

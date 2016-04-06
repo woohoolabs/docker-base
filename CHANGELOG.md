@@ -28,6 +28,13 @@
 
 # PHP
 
+## 2.1.1 - 2016-04-06
+
+- Updated PHP to 7.0.5
+- Updated Composer to 1.0.0
+- Updated PHP CodeSniffer to 2.6.0
+- Updated PHPMetrics to 1.10
+
 ## 2.1.0 - 2016-03-22
 
 - Removed sendmail directory
