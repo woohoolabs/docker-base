@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+set -e
 
 curl -L -o phive.phar https://phar.io/releases/phive.phar
 curl -L -o phive.phar.asc https://phar.io/releases/phive.phar.asc

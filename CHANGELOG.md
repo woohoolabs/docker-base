@@ -28,6 +28,11 @@
 
 # PHP
 
+## 2.2.0 - 2016-04-08
+
+- Added PHP Redis module
+- Removed MySQLi extension
+
 ## 2.1.1 - 2016-04-06
 
 - Updated PHP to 7.0.5
