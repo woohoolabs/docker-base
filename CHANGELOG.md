@@ -28,6 +28,10 @@
 
 # PHP
 
+## 2.3.1 - 2016-04-11
+
+- Fixed www-data user permissions
+
 ## 2.3.0 - 2016-04-10
 
 - Changed default user to www-data
