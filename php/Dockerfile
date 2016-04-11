@@ -22,6 +22,8 @@ RUN chmod -R ug+x /build && \
     /build/ensure.sh && \
     rm -R /build
 
+USER www-data
+
 WORKDIR /code
 
 EXPOSE 9000

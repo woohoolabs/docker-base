@@ -28,6 +28,10 @@
 
 # PHP
 
+## 2.3.0 - 2016-04-10
+
+- Changed default user to www-data
+
 ## 2.2.0 - 2016-04-08
 
 - Added PHP Redis module
