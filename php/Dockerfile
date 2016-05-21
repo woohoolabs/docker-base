@@ -1,4 +1,4 @@
-FROM php:7.0.5-fpm
+FROM php:7.0.6-fpm
 MAINTAINER Mate Kocsis <kocsismate@woohoolabs.com>
 
 ENV COMPOSER_HOME /root/composer

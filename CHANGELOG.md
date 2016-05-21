@@ -28,6 +28,11 @@
 
 # PHP
 
+## 2.3.2 - 2016-05-21
+
+- Updated PHP to 7.0.3
+- Updated Composer to 1.1.1
+
 ## 2.3.1 - 2016-04-11
 
 - Fixed www-data user permissions
