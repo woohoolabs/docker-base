@@ -28,6 +28,10 @@
 
 # PHP
 
+## 2.4.0 - 2016-05-26
+
+- Added New Relic PHP extension
+
 ## 2.3.2 - 2016-05-21
 
 - Updated PHP to 7.0.3

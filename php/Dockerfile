@@ -2,6 +2,9 @@ FROM php:7.0.6-fpm
 MAINTAINER Mate Kocsis <kocsismate@woohoolabs.com>
 
 ENV COMPOSER_HOME /root/composer
+ENV NR_INSTALL_SILENT 1
+ENV NR_INSTALL_KEY ""
+ENV NR_APP_NAME ""
 ENV PATH $PATH:/code:/code/vendor/bin
 
 COPY ./build /build
@@ -15,6 +18,7 @@ RUN chmod -R ug+x /build && \
     /build/php.sh && \
     /build/composer.sh && \
     /build/blackfire.sh && \
+    /build/newrelic.sh && \
     /build/mysql.sh && \
     /build/msmtp.sh && \
     /build/supervisor.sh && \
