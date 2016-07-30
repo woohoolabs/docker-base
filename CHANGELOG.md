@@ -28,6 +28,12 @@
 
 # PHP
 
+## 2.5.0 - 2016-07-30
+
+- Updated PHP to 7.0.9
+- Updated Redis extension to 3.0.0
+- Updated Composer to 1.2.0
+
 ## 2.4.1 - 2016-05-28
 
 - Updated to PHP 7.0.7
