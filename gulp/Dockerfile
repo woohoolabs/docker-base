@@ -1,4 +1,4 @@
-FROM node:5.5
+FROM node:6.4
 MAINTAINER Mate Kocsis <kocsismate@woohoolabs.com>
 
 ENV RUBY_MAJOR 2.3
@@ -11,6 +11,7 @@ ENV PATH $GEM_HOME/bin:$PATH
 COPY ./build /build
 RUN chmod -R ug+x /build && \
     sync && \
+    /build/npm.sh && \
     /build/ruby.sh && \
     /build/bundler.sh && \
     /build/sass.sh && \

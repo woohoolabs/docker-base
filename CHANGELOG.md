@@ -14,6 +14,11 @@
 
 # GULP
 
+## 2.1.0 - 2016-08-21
+
+- Updated Node JS to version 6.4
+- Updated NPM to the most recent version (3.10.6)
+
 ## 2.0.1 - 2016-03-20
 
 - Removed /build directory
