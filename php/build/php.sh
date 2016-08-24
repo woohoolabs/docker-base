@@ -11,10 +11,9 @@ pecl install timezonedb
 docker-php-ext-enable timezonedb
 
 docker-php-source extract
-curl -L -o /tmp/redis.tar.gz https://github.com/phpredis/phpredis/archive/$PHP_REDIS_VERSION.tar.gz
+curl -L -o /tmp/redis.tar.gz https://github.com/phpredis/phpredis/archive/${PHP_REDIS_VERSION}.tar.gz
 tar xfz /tmp/redis.tar.gz
 rm -r /tmp/redis.tar.gz
-mv phpredis-$PHP_REDIS_VERSION /usr/src/php/ext/redis
-sed -i '$ a redis' /usr/src/php-available-exts
+mv phpredis-${PHP_REDIS_VERSION} /usr/src/php/ext/redis
 docker-php-ext-install redis
 docker-php-source delete

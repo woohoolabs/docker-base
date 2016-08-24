@@ -9,7 +9,6 @@ ENV PATH $PATH:/code:/code/vendor/bin
 
 ENV PHP_REDIS_VERSION 3.0.0
 ENV COMPOSER_VERSION 1.2.0
-ENV COMPASS_VERSION 1.0.3
 
 COPY ./build /build
 COPY ./bin/* /usr/local/bin/
