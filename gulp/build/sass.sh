@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 set -e
 
-gem install sass -v 3.4.22
-gem install sass-globbing -v 1.1.5
-gem install compass -v 1.0.3
+export DEBIAN_FRONTEND=noninteractive
+
+gem install sass -v $SASS_VERSION
+gem install sass-globbing -v $SASS_GLOBBING_VERSION
+gem install compass -v $COMPASS_VERSION
