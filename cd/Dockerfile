@@ -11,7 +11,6 @@ ENV TERRAFORM_S3_DIR_VERSION 0.0.3
 COPY ./build /build
 
 RUN chmod -R ug+x /build && \
-    chmod +x /usr/local/bin/* && \
     sync && \
     /build/tools.sh && \
     /build/docker.sh && \

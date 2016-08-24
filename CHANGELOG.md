@@ -43,6 +43,11 @@
 
 # PHP
 
+## 2.5.1 - 2016-08-24
+
+- Updated PHP to 7.0.10
+- Updated timezone DB to v2016.6
+
 ## 2.5.0 - 2016-07-30
 
 - Updated PHP to 7.0.9
