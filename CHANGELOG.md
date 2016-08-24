@@ -47,6 +47,7 @@
 
 - Updated PHP to 7.0.10
 - Updated timezone DB to v2016.6
+- Removed iniscan
 
 ## 2.5.0 - 2016-07-30
 

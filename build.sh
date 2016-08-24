@@ -16,7 +16,7 @@ then
     exit 1
 fi
 
-IMAGE_ID=`docker images -q woohoolabs/$1`
+IMAGE_ID=`docker images -q woohoolabs/$1:latest`
 
 docker tag $IMAGE_ID woohoolabs/$1:$2.$3.$4
 docker tag $IMAGE_ID woohoolabs/$1:$2.$3
