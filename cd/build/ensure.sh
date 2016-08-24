@@ -3,30 +3,26 @@ set -e
 
 export DEBIAN_FRONTEND=noninteractive
 
-echo -e "\nRUBY"
+echo -e "\nGIT"
 echo "------------------------------------------------------------"
-ruby -v
+git --version
 
-echo -e "\nBUNDLER"
+echo -e "\nDOCKER"
 echo "------------------------------------------------------------"
-bundle -v
+docker -v
 
-echo -e "\nNODE JS"
+echo -e "\nDOCKER MACHINE"
 echo "------------------------------------------------------------"
-node -v
+docker-machine version
 
-echo -e "\nNPM"
+echo -e "\nDOCKER COMPOSE"
 echo "------------------------------------------------------------"
-npm -v
+docker-compose --version
 
-echo -e "\nGULP"
+echo -e "\nTERRAFORM"
 echo "------------------------------------------------------------"
-gulp -v
+terraform -v
 
-echo -e "\nSASS"
+echo -e "\nAWS CLI"
 echo "------------------------------------------------------------"
-sass -v
-
-echo -e "\nCOMPASS"
-echo "------------------------------------------------------------"
-compass -v
+aws --version

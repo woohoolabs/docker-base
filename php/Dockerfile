@@ -1,4 +1,4 @@
-FROM php:7.0.9-fpm
+FROM php:7.0.10-fpm
 MAINTAINER Mate Kocsis <kocsismate@woohoolabs.com>
 
 ENV COMPOSER_HOME /root/composer
@@ -6,6 +6,10 @@ ENV NR_INSTALL_SILENT 1
 ENV NR_INSTALL_KEY ""
 ENV NR_APP_NAME ""
 ENV PATH $PATH:/code:/code/vendor/bin
+
+ENV PHP_REDIS_VERSION 3.0.0
+ENV COMPOSER_VERSION 1.2.0
+ENV COMPASS_VERSION 1.0.3
 
 COPY ./build /build
 COPY ./bin/* /usr/local/bin/

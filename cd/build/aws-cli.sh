@@ -3,4 +3,5 @@ set -e
 
 export DEBIAN_FRONTEND=noninteractive
 
-apt-get -y install supervisor
+apt-get -y install python-pip
+pip install awscli

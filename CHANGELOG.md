@@ -12,6 +12,12 @@
 
 - Initial release
 
+# CD
+
+## 1.0.0 - 2016-08-24
+
+- Initial release
+
 # GULP
 
 ## 2.1.1 - 2016-08-22
