@@ -3,25 +3,26 @@ MAINTAINER Mate Kocsis <kocsismate@woohoolabs.com>
 
 ENV COMPOSER_VERSION 1.2.0
 ENV PHP_REDIS_VERSION 3.0.0
+ENV PHP_METRICS_VERSION 1.8.3
+ENV PHP_PRESTISSIMO_VERSION 0.3.4
+ENV PHP_MD_VERSION 2.4.3
+ENV PHP_INISCAN_VERSION 3.6.4
+ENV PHP_CODE_SNIFFER_VERSION 2.6.2
 
 ENV COMPOSER_HOME /composer
 ENV NR_INSTALL_SILENT 1
 ENV NR_INSTALL_KEY ""
 ENV NR_APP_NAME ""
-ENV PATH $PATH:/code:/code/vendor/bin
+ENV PATH /composer/vendor/bin:/code:/code/vendor/bin:$PATH
 
 COPY ./build /build
-COPY ./bin/* /usr/local/bin/
 
-RUN chmod -R ugo+x /build && \
-    chmod +x /usr/local/bin/* && \
-    /build/tools.sh
-
-USER www-data
-
-RUN /build/gettext.sh && \
+RUN chmod -R +x /build && \
+    /build/system.sh && \
+    /build/gettext.sh && \
     /build/php.sh && \
     /build/composer.sh && \
+    /build/tools.sh && \
     /build/blackfire.sh && \
     /build/newrelic.sh && \
     /build/mysql.sh && \
@@ -30,6 +31,8 @@ RUN /build/gettext.sh && \
     /build/clean.sh && \
     /build/ensure.sh && \
     rm -R /build
+
+USER www-data
 
 WORKDIR /code
 
