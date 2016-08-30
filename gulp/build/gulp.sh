@@ -3,4 +3,4 @@ set -e
 
 export DEBIAN_FRONTEND=noninteractive
 
-npm install gulp -g
+npm install gulp -g --loglevel=warn

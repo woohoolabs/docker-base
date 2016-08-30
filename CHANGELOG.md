@@ -14,6 +14,18 @@
 
 # GULP
 
+## 3.0.0 - 2016-08-28
+
+- Run the container with the Gulp user
+
+# GULP
+
+## 2.1.1 - 2016-08-24
+
+- Updated NPM to 3.10.7
+
+# GULP
+
 ## 2.1.1 - 2016-08-24
 
 - Updated NPM to 3.10.7

@@ -28,6 +28,7 @@ RUN chmod -R +x /build && \
     /build/mysql.sh && \
     /build/msmtp.sh && \
     /build/supervisor.sh && \
+    /build/permissions.sh && \
     /build/clean.sh && \
     /build/ensure.sh && \
     rm -R /build
