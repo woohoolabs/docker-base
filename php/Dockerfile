@@ -1,4 +1,4 @@
-FROM php:7.0.10-fpm
+FROM php:7.1-fpm
 MAINTAINER Mate Kocsis <kocsismate@woohoolabs.com>
 
 ENV COMPOSER_VERSION 1.2.0

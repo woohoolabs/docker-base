@@ -49,6 +49,10 @@
 
 # PHP
 
+## 3.1.0 - 2016-09-08
+
+- Updated PHP to 7.1 RC1
+
 ## 3.0.0 - 2016-08-28
 
 - Removed sudo
