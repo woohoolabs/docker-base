@@ -49,6 +49,12 @@
 
 # PHP
 
+## 3.1.1 - 2016-09-08
+
+- Updated PHP to 7.1 RC2
+- Updated Composer to 1.2.1
+- Readded Blackfire
+
 ## 3.1.0 - 2016-09-08
 
 - Updated PHP to 7.1 RC1
