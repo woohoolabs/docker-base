@@ -49,6 +49,11 @@
 
 # PHP
 
+## 3.1.2 - 2016-10-07
+
+- Updated PHP to 7.1 RC3
+- Added PHP LOC
+
 ## 3.1.1 - 2016-09-08
 
 - Updated PHP to 7.1 RC2
