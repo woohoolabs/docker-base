@@ -49,6 +49,11 @@
 
 # PHP
 
+## 3.1.3 - 2016-12-08
+
+- Updated PHP to 7.1
+- Updated various binaries
+
 ## 3.1.2 - 2016-10-07
 
 - Updated PHP to 7.1 RC3
