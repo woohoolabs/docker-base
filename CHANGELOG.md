@@ -49,6 +49,11 @@
 
 # PHP
 
+## 3.1.4 - 2016-12-26
+
+- Updated Composer to 1.3.0
+- Added APCu extension
+
 ## 3.1.3 - 2016-12-08
 
 - Updated PHP to 7.1

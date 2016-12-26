@@ -10,6 +10,9 @@ docker-php-ext-install bcmath bz2 curl gettext intl json mbstring opcache pdo_my
 pecl install timezonedb
 docker-php-ext-enable timezonedb
 
+pecl install apcu
+docker-php-ext-enable apcu
+
 docker-php-source extract
 curl -L -o /tmp/redis.tar.gz https://github.com/phpredis/phpredis/archive/${PHP_REDIS_VERSION}.tar.gz
 tar xfz /tmp/redis.tar.gz
