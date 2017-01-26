@@ -1,9 +1,5 @@
 # Woohoo Labs. Docker Base Images
 
-## Versioning
-
-This library tries to follow [SemVer v2.0.0](http://semver.org/).
-
 ## Change Log
 
 Please see [CHANGELOG](CHANGELOG.md) for more information what has changed recently.

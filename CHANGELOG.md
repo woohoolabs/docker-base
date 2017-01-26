@@ -1,5 +1,9 @@
 # BEANSTALKD
 
+## 2.0.2 - 2017-01-26
+
+- Updated image
+
 ## 2.0.1 - 2016-03-20
 
 - Removed /build directory
@@ -14,17 +18,15 @@
 
 # GULP
 
+## 3.1.0 - 2017-01-26
+
+- Updated NodeJS to 7.4
+- Updated npm to 4.2.0
+- Updated Ruby to 2.4.0
+
 ## 3.0.0 - 2016-08-28
 
 - Run the container with the Gulp user
-
-# GULP
-
-## 2.1.1 - 2016-08-24
-
-- Updated NPM to 3.10.7
-
-# GULP
 
 ## 2.1.1 - 2016-08-24
 
@@ -48,6 +50,11 @@
 - Initial release
 
 # PHP
+
+## 3.1.5 - 2017-01-26
+
+- Updated PHP to 7.1.1
+- Updated Composer to 1.3.1
 
 ## 3.1.4 - 2016-12-26
 
