@@ -51,6 +51,11 @@
 
 # PHP
 
+## 3.1.6 - 2017-03-11
+
+- Updated PHP to 7.1.2
+- Updated Composer to 1.4.0
+
 ## 3.1.5 - 2017-01-26
 
 - Updated PHP to 7.1.1
