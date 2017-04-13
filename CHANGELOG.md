@@ -51,6 +51,15 @@
 
 # PHP
 
+## 3.2.0 - 2017-03-11
+
+- Updated PHP to 7.1.3
+- Updated Composer to 1.4.1
+- Updated PHP Redis to 3.1.2
+- Updated PHP Metrics to 2.2.0
+- Updated PHP Iniscan to 3.6.5
+- Updated PHP CS to 2.8.1
+
 ## 3.1.6 - 2017-03-11
 
 - Updated PHP to 7.1.2
