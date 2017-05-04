@@ -51,6 +51,11 @@
 
 # PHP
 
+## 3.2.1 - 2017-05-04
+
+- Updated PHP to 7.1.4
+- Added PHPStan 0.6.4
+
 ## 3.2.0 - 2017-03-11
 
 - Updated PHP to 7.1.3
