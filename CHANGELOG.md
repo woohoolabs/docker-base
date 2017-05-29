@@ -51,6 +51,11 @@
 
 # PHP
 
+## 3.2.3 - 2017-05-29
+
+- Updated Composer to 1.4.2
+- Updated Prestissimo to 0.3.7
+
 ## 3.2.2 - 2017-05-15
 
 - Updated PHP to 7.1.5
