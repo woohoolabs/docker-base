@@ -1,8 +1,6 @@
 #!/usr/bin/env bash
 set -e
 
-export DEBIAN_FRONTEND=noninteractive
-
 echo -e "\nRUBY"
 echo "------------------------------------------------------------"
 ruby -v

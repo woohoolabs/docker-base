@@ -1,8 +1,6 @@
 #!/usr/bin/env bash
 set -e
 
-export DEBIAN_FRONTEND=noninteractive
-
 userdel -r www-data
 groupadd -g 33 gulp
 useradd -u 33 -d /home/gulp -g gulp gulp

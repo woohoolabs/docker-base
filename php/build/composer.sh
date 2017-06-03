@@ -1,8 +1,6 @@
 #!/usr/bin/env bash
 set -e
 
-export DEBIAN_FRONTEND=noninteractive
-
 mkdir /composer
 
 curl -sS https://getcomposer.org/installer | php -- \

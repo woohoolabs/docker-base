@@ -18,6 +18,12 @@
 
 # GULP
 
+## 4.0.0 - 2017-06-03
+
+- Updated NodeJS to 8.0
+- Updated npm to 5.0.0
+- Updated Ruby to 2.4.1
+
 ## 3.1.0 - 2017-01-26
 
 - Updated NodeJS to 7.4

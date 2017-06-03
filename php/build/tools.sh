@@ -1,8 +1,6 @@
 #!/usr/bin/env bash
 set -e
 
-export DEBIAN_FRONTEND=noninteractive
-
 composer global require \
     phpmetrics/phpmetrics:$PHP_METRICS_VERSION \
     hirak/prestissimo:$PHP_PRESTISSIMO_VERSION \

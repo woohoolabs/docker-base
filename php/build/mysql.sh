@@ -1,8 +1,6 @@
 #!/usr/bin/env bash
 set -e
 
-export DEBIAN_FRONTEND=noninteractive
-
 wget https://www.dotdeb.org/dotdeb.gpg
 apt-key add dotdeb.gpg
 

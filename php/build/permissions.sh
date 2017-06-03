@@ -1,8 +1,6 @@
 #!/usr/bin/env bash
 set -e
 
-export DEBIAN_FRONTEND=noninteractive
-
 function set_permissions() {
     mkdir -p $1
     chown -R www-data:root $1
