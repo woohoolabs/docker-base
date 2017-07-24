@@ -57,6 +57,16 @@
 
 # PHP
 
+## 3.3.0 - 2017-07-24
+
+- Updated PHP to 7.2.0 beta1
+- Updated PHPRedis to 3.1.3
+- Updated Supervisor to 3.3.1
+- Updated SMSTP to 1.6.6
+- Updated PHPStan to 0.8.0
+- Updated Codesniffer to 3.0.1
+- Updated Git to 2.11
+
 ## 3.2.3 - 2017-05-29
 
 - Updated Composer to 1.4.2

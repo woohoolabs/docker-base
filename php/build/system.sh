@@ -7,6 +7,8 @@ apt-get update
 apt-get -y --no-install-recommends install \
                     curl \
                     git \
+                    dirmngr \
+                    gnupg \
                     dkms \
                     unzip \
                     wget
