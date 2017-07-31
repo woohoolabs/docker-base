@@ -57,6 +57,11 @@
 
 # PHP
 
+## 4.0.0 - unreleased
+
+- Updated PHP to 7.2.0 beta2
+- Removed QA tools (PHPMetrics, PHPCS, PHPLoc, PHPStan, PHPMD)
+
 ## 3.3.0 - 2017-07-24
 
 - Updated PHP to 7.2.0 beta1
@@ -66,6 +71,8 @@
 - Updated PHPStan to 0.8.0
 - Updated Codesniffer to 3.0.1
 - Updated Git to 2.11
+- Disabled Blackfire
+- Disabled New Relic
 
 ## 3.2.3 - 2017-05-29
 
