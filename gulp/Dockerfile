@@ -1,7 +1,7 @@
-FROM node:8.0
+FROM node:8.2
 MAINTAINER Mate Kocsis <kocsismate@woohoolabs.com>
 
-ENV NPM_VERSION 5.0.0
+ENV NPM_VERSION 5.3.0
 ENV RUBY_MAJOR_VERSION 2.4
 ENV RUBY_VERSION 2.4.1
 ENV RUBY_DOWNLOAD_SHA256 a330e10d5cb5e53b3a0078326c5731888bb55e32c4abfeb27d9e7f8e5d000250
@@ -16,6 +16,7 @@ ENV PATH $GEM_HOME/bin:$PATH
 COPY ./build /build
 RUN chmod -R ug+x /build && \
     sync && \
+    /build/system.sh && \
     /build/npm.sh && \
     /build/ruby.sh && \
     /build/bundler.sh && \

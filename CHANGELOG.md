@@ -18,6 +18,12 @@
 
 # GULP
 
+## 4.1.0 - 2017-08-07
+
+- Updated NodeJS to 8.2.1
+- Updated npm to 5.3.0
+- Added nasm
+
 ## 4.0.0 - 2017-06-03
 
 - Updated NodeJS to 8.0
