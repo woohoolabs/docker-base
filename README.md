@@ -20,6 +20,10 @@ Please see [CHANGELOG](CHANGELOG.md) for more information what has changed recen
 
 Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 
+## Support
+
+Please see [SUPPORT](SUPPORT.md) for details.
+
 ## Credits
 
 - [Máté Kocsis][link-author]
