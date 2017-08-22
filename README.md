@@ -1,5 +1,7 @@
 # Woohoo Labs. Docker Base Images
 
+[![Join the chat at https://gitter.im/woohoolabs/docker-base](https://badges.gitter.im/woohoolabs/docker-base.svg)](https://gitter.im/woohoolabs/docker-base?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 ## Usage
 
 You can use the `build.sh` script in order to build images by passing the image name and version numbers as arguments.
