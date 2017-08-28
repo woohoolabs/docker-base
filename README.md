@@ -6,9 +6,9 @@ This repo contains scripts necessary for building the following base images:
 
 |                Image                |                                Pulls                               |
 |:-----------------------------------:|--------------------------------------------------------------------|
-| [PHP][link-php-image]               | [![PHP Pulls][ico-php-pulls]][link-php-image]                      |
 | [Beanstalkd][link-beanstalkd-image] | [![Beanstalkd Pulls][ico-beanstalkd-pulls]][link-beanstalkd-image] |
 | [Gulp][link-gulp-image]             | [![Gulp Pulls][ico-gulp-pulls]][link-gulp-image]                   |
+| [PHP][link-php-image]               | [![PHP Pulls][ico-php-pulls]][link-php-image]                      |
 
 ## Usage
 
