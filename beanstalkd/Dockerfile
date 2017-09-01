@@ -1,4 +1,4 @@
-FROM debian:jessie
+FROM debian:9.1
 MAINTAINER Mate Kocsis <kocsismate@woohoolabs.com>
 
 COPY ./build /build
