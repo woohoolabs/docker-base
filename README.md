@@ -34,7 +34,7 @@ This image is based on PHP (7.2.0-RC1) and it contains the following programs:
 - Composer 1.5.1 (+ Prestissimo 0.3.7)
 - MySQL client 5.7
 - Supervisor 3.3.1
-- Various utilities (curl, gettext, git, msmtp, unzip, wget)
+- Various utilities (curl, gettext, git, msmtp, unzip, wget, wkhtmltopdf)
 
 ## Usage
 

@@ -11,4 +11,5 @@ apt-get -y --no-install-recommends install \
                     gnupg \
                     dkms \
                     unzip \
-                    wget
+                    wget \
+                    wkhtmltopdf
