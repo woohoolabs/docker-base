@@ -28,10 +28,10 @@ This image is based on Node JS (8.4) and it contains the following programs:
 
 ### PHP
 
-This image is based on PHP (7.2.0-RC1) and it contains the following programs:
+This image is based on PHP (7.2.0-RC5) and it contains the following programs:
 
 - Various PHP extensions (apcu, bcmath, blackfire, bz2, curl, gettext, intl, json, mbstring, new relic, opcache, pdo_mysql, redis, timezonedb)
-- Composer 1.5.1 (+ Prestissimo 0.3.7)
+- Composer 1.5.2 (+ Prestissimo 0.3.7)
 - MySQL client 5.7
 - Supervisor 3.3.1
 - Various utilities (curl, gettext, git, msmtp, unzip, wget, wkhtmltopdf)
@@ -42,7 +42,7 @@ You can use the `build.sh` script in order to build images by passing the image 
 For example
 
 ```bash
-./build.sh php 4 0 0
+./build.sh php 4 0 2
 ```
 
 The script will then build the "woohoolabs/php:4.0.0" image. If you are satisfied with the result, you can choose to

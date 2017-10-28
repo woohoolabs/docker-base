@@ -8,6 +8,8 @@ docker-php-ext-install bcmath bz2 curl gettext intl json mbstring opcache pdo_my
 pecl install timezonedb
 docker-php-ext-enable timezonedb
 
+# pecl install xdebug
+
 pecl install apcu
 docker-php-ext-enable apcu
 

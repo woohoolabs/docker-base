@@ -1,5 +1,12 @@
 # PHP
 
+## 4.0.2 - 2017-10-28
+
+- Updated PHP to 7.2.0 RC5 (based on Debian Stretch)
+- Updated Redis extension to 3.1.4
+- Updated Composer to 1.5.2
+- Re-enabled Blackfire extension
+
 ## 4.0.1 - 2017-09-01
 
 - Updated PHP to 7.2.0 RC1
