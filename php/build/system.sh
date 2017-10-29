@@ -11,5 +11,8 @@ apt-get -y --no-install-recommends install \
                     gnupg \
                     dkms \
                     unzip \
-                    wget \
+                    wget
+
+apt-get -y --install-recommends install \
+                    xvfb \
                     wkhtmltopdf

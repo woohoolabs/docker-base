@@ -15,16 +15,19 @@ COPY ./build /build
 
 RUN chmod -R +x /build && \
     /build/system.sh && \
-    /build/gettext.sh && \
-    /build/php.sh && \
+    /build/gettext.sh
+
+RUN /build/php.sh && \
     /build/composer.sh && \
-    /build/blackfire.sh && \
+    /build/blackfire.sh
     #/build/newrelic.sh && \
-    /build/mysql.sh && \
+
+RUN /build/mysql.sh && \
     /build/msmtp.sh && \
     /build/supervisor.sh && \
-    /build/permissions.sh && \
-    /build/clean.sh && \
+    /build/permissions.sh
+
+RUN /build/clean.sh && \
     /build/ensure.sh && \
     rm -R /build
 

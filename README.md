@@ -12,7 +12,7 @@ This repo contains scripts necessary for building the following base images:
 
 ### Beanstalkd
 
-This image is based on Debian Strech (9.1) and it contains the following programs:
+This image is based on Debian Stretch (9.1) and it contains the following programs:
 
 - Beanstalkd 1.10
 
