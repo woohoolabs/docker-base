@@ -1,7 +1,7 @@
-FROM php:7.2.0RC5-fpm-stretch
+FROM php:7.2.0-fpm-stretch
 MAINTAINER Mate Kocsis <kocsismate@woohoolabs.com>
 
-ENV COMPOSER_VERSION 1.5.2
+ENV COMPOSER_VERSION 1.5.3
 ENV PHP_REDIS_VERSION 3.1.4
 ENV PHP_PRESTISSIMO_VERSION 0.3.7
 

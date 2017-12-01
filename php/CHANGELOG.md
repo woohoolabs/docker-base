@@ -1,5 +1,11 @@
 # PHP
 
+## 4.2.0 - 2017-12-01
+
+- Updated PHP to 7.2.0
+- Updated Composer to 1.5.3
+- Added imagick 3.4.3 PHP extension
+
 ## 4.1.0 - 2017-10-29
 
 - Updated PHP to 7.2.0 RC5 (based on Debian Stretch)
