@@ -1,5 +1,11 @@
 # PHP
 
+## 4.2.1 - 2017-12-26
+
+- Updated PHPRedis to 3.1.5
+- Updated Composer to 1.5.6
+- Fixed gettext locales
+
 ## 4.2.0 - 2017-12-01
 
 - Updated PHP to 7.2.0
