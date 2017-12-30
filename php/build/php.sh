@@ -12,7 +12,7 @@ docker-php-ext-enable timezonedb
 # Install imagick
 apt-get -y --no-install-recommends install libmagickwand-dev
 export CFLAGS="$PHP_CFLAGS" CPPFLAGS="$PHP_CPPFLAGS" LDFLAGS="$PHP_LDFLAGS"
-pecl install imagick-3.4.3
+pecl install imagick-${PHP_IMAGICK_VERSION}
 docker-php-ext-enable imagick
 
 # Install xdebug
