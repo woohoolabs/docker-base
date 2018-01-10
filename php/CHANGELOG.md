@@ -1,5 +1,12 @@
 # PHP
 
+## 4.2.2 - 2018-01-10
+
+- Updated PHP to 7.2.1
+- Re-enabled and updated New Relic extension to v7.7
+- Updated Redis extension to v3.1.6
+- Updated Composer to 1.6.0
+
 ## 4.2.1 - 2017-12-26
 
 - Updated PHPRedis to 3.1.5

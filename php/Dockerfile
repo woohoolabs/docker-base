@@ -1,8 +1,8 @@
-FROM php:7.2.0-fpm-stretch
+FROM php:7.2.1-fpm-stretch
 MAINTAINER Mate Kocsis <kocsismate@woohoolabs.com>
 
-ENV COMPOSER_VERSION 1.5.6
-ENV PHP_REDIS_VERSION 3.1.5
+ENV COMPOSER_VERSION 1.6.0
+ENV PHP_REDIS_VERSION 3.1.6
 ENV PHP_IMAGICK_VERSION 3.4.3
 ENV PHP_PRESTISSIMO_VERSION 0.3.7
 
@@ -20,8 +20,8 @@ RUN chmod -R +x /build && \
 
 RUN /build/php.sh && \
     /build/composer.sh && \
-    /build/blackfire.sh
-    #/build/newrelic.sh && \
+    /build/blackfire.sh && \
+    /build/newrelic.sh
 
 RUN /build/mysql.sh && \
     /build/msmtp.sh && \

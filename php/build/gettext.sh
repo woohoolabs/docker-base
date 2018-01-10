@@ -1,6 +1,7 @@
 #!/bin/bash
 set -e
 
+apt-get update
 apt-get -y install gettext locales
 
 sed -i -e 's/# en_US.UTF-8 UTF-8/en_US.UTF-8 UTF-8/' /etc/locale.gen
