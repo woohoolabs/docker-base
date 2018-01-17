@@ -1,5 +1,9 @@
 # PHP
 
+## 4.2.3 - 2018-01-17
+
+- Added mysqli extension
+
 ## 4.2.2 - 2018-01-10
 
 - Updated PHP to 7.2.1

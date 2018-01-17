@@ -30,7 +30,7 @@ This image is based on Node JS (8.4) and it contains the following programs:
 
 This image is based on PHP (7.2.1) and it contains the following programs:
 
-- Various PHP extensions (apcu, bcmath, blackfire, bz2, curl, gettext, imagick, intl, json, mbstring, new relic, opcache, pdo_mysql, redis, timezonedb)
+- Various PHP extensions (apcu, bcmath, blackfire, bz2, curl, gettext, imagick, intl, json, mbstring, mysqli, new relic, opcache, pdo_mysql, redis, timezonedb)
 - Composer 1.6.0 (+ Prestissimo 0.3.7)
 - MySQL client 5.7
 - Supervisor 3.3.1
