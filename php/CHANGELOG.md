@@ -1,5 +1,10 @@
 # PHP
 
+## 4.3.0 - 2018-01-30
+
+- Added xdebug extension
+- Updated Composer to 1.6.2
+
 ## 4.2.3 - 2018-01-17
 
 - Added mysqli extension
