@@ -1,5 +1,15 @@
 # PHP
 
+## 5.0.0 - 2018-11-18
+
+- Updated PHP to 7.3.0
+- Updated PHPRedis to 4.2.0
+- Temporarily disabled xdebug extension
+- Temporarily disabled newrelic extension
+- Updated Composer to 1.8.0
+- Updated Prestissimo to 0.3.8
+- Updated MySQL client to 8.0.0
+
 ## 4.3.0 - 2018-01-30
 
 - Added xdebug extension
