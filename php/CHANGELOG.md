@@ -1,5 +1,10 @@
 # PHP
 
+## 5.0.1 - 2019-01-14
+
+- Updated PHP to 7.3.1
+- Enabled the newrelic extension again
+
 ## 5.0.0 - 2018-11-18
 
 - Updated PHP to 7.3.0

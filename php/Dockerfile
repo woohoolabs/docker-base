@@ -1,4 +1,4 @@
-FROM php:7.3.0-fpm-stretch
+FROM php:7.3.1-fpm-stretch
 MAINTAINER Mate Kocsis <kocsismate@woohoolabs.com>
 
 ENV COMPOSER_VERSION 1.8.0
