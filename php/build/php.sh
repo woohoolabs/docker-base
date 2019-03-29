@@ -16,7 +16,7 @@ pecl install imagick-${PHP_IMAGICK_VERSION}
 docker-php-ext-enable imagick
 
 # Install xdebug
-#pecl install xdebug
+pecl install xdebug
 
 # Install APCU
 pecl install apcu

@@ -1,5 +1,10 @@
 # PHP
 
+## 5.0.2 - 2019-03-29
+
+- Updated PHP to 7.3.3
+- Enabled the xdebug extension again
+
 ## 5.0.1 - 2019-01-14
 
 - Updated PHP to 7.3.1
