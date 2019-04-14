@@ -1,5 +1,10 @@
 # PHP
 
+## 5.0.3 - 2019-04-14
+
+- Updated PHP to 7.3.4
+- Added cron to the image
+
 ## 5.0.2 - 2019-03-29
 
 - Updated PHP to 7.3.3
