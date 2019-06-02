@@ -1,5 +1,12 @@
 # PHP
 
+## 5.1.0 - 2019-06-02
+
+- Updated PHP to 7.3.6
+- Updated Composer to 1.8.5
+- Updated Imagick to 3.4.4
+- Added much more locales
+
 ## 5.0.3 - 2019-04-14
 
 - Updated PHP to 7.3.4
