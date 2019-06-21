@@ -1,5 +1,12 @@
 # GULP
 
+## 5.0.0 - 2019-06-22
+
+- Updated NodeJS to 12.4.0
+- Updated npm to 6.9.0
+- Updated Ruby to 2.6.3
+- Updated Sass to 3.7.4
+
 ## 4.2.0 - 2017-09-01
 
 - Updated NodeJS to 8.4.0
