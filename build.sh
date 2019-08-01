@@ -20,6 +20,7 @@ IMAGE_ID=`docker images -q woohoolabs/$1:latest`
 
 docker tag $IMAGE_ID woohoolabs/$1:$2.$3.$4
 docker tag $IMAGE_ID woohoolabs/$1:$2.$3
+docker tag $IMAGE_ID woohoolabs/$1:$2
 docker tag $IMAGE_ID woohoolabs/$1:latest
 
 read -p "Do you wish to publish the image 'woohoolabs/$1:$2.$3.$4' (y/n)? " -n 1 -r
@@ -31,4 +32,5 @@ fi
 
 docker push woohoolabs/$1:$2.$3.$4
 docker push woohoolabs/$1:$2.$3
+docker push woohoolabs/$1:$2
 docker push woohoolabs/$1:latest
