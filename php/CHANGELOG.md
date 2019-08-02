@@ -1,5 +1,11 @@
 # PHP
 
+## 7.4.0-beta1 - 2019-08-02
+
+- Changed base image to be Alpine-based
+- Updated PHP to 7.4.0 beta1
+- Removed MySQL client
+
 ## 5.1.0 - 2019-06-02
 
 - Updated PHP to 7.3.6

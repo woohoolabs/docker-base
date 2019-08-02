@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/sh
 set -e
 
 echo -e "\nGIT"
@@ -12,10 +12,6 @@ php -v
 echo -e "\nCOMPOSER"
 echo "------------------------------------------------------------"
 composer --version
-
-echo -e "\nMYSQL CLIENT"
-echo "------------------------------------------------------------"
-mysql -V
 
 echo -e "\nSUPERVISOR"
 echo "------------------------------------------------------------"
