@@ -1,5 +1,5 @@
-#!/usr/bin/env bash
-set -e
+#!/bin/sh
+set -eux
 
 apt-get clean
 rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* /var/www/*

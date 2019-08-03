@@ -1,9 +1,8 @@
-#!/usr/bin/env bash
-set -e
+#!/bin/sh
+set -eux
 
-userdel -r www-data
-groupadd -g 33 gulp
-useradd -u 33 -d /home/gulp -g gulp gulp
+addgroup -g 82 gulp
+adduser -u 82 --system -G gulp gulp
 
 mkdir -p /home/gulp
 chown -R gulp:gulp /home/gulp
