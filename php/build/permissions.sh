@@ -1,5 +1,5 @@
 #!/bin/sh
-set -e
+set -eux
 
 function set_permissions() {
     mkdir -p $1

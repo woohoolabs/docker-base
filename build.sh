@@ -7,7 +7,7 @@ if [ "$#" -ne 4 ]; then
     exit -1
 fi
 
-docker build -t woohoolabs/$1 $1
+docker build -t woohoolabs/$1 -f $1/Dockerfile .
 
 read -p "Do you wish to tag the image 'woohoolabs/$1:$2.$3.$4' (y/n)? " -n 1 -r
 echo
