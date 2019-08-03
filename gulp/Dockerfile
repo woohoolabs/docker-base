@@ -36,8 +36,6 @@ RUN rm -rf /var/cache/apk/* && \
 RUN /build/ensure.sh && \
     rm -R /build
 
-USER gulp
-
 WORKDIR /code
 
 CMD npm -v
