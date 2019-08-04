@@ -6,9 +6,7 @@ ARG GULP_VERSION=4.0.2
 COPY ./gulp/build /build
 
 # Install system dependencies
-RUN apk add --no-cache --repository http://dl-3.alpinelinux.org/alpine/edge/community/ --allow-untrusted \
-        dos2unix && \
-    apk add --no-cache \
+RUN apk add --no-cache \
         autoconf \
         automake \
         build-base \
