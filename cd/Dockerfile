@@ -1,4 +1,4 @@
-FROM php:7.4.0beta1-fpm-alpine3.10
+FROM php:7.4.0beta1-cli-alpine3.10
 MAINTAINER Mate Kocsis <kocsismate@woohoolabs.com>
 
 ARG TERRAFORM_VERSION=0.12.6
@@ -35,6 +35,12 @@ RUN set -eux; \
         py-pip \
         python-dev
 
+# Permissions
+RUN set -eux; \
+    mkdir -p /code && \
+    chown -R root:root /code && \
+    chmod -R 775 /code
+
 # Clean
 RUN set -eux; \
     rm -rf /var/cache/apk/* && \
@@ -45,8 +51,9 @@ RUN set -eux; \
 
 # Ensure
 RUN set -eux; \
-    ls -la /usr/local/bin/ && \
     git --version && \
     make --version && \
     terraform -v && \
     aws --version
+
+WORKDIR /code
