@@ -9,13 +9,24 @@ COPY ./gulp/build /build
 RUN apk add --no-cache --repository http://dl-3.alpinelinux.org/alpine/edge/community/ --allow-untrusted \
         dos2unix && \
     apk add --no-cache \
+        autoconf \
+        automake \
+        build-base \
         gifsicle \
+        g++ \
         file \
-        libc6-compat \
         libjpeg-turbo-dev \
         libpng-dev \
+        make \
+        nasm \
         optipng \
-        nasm
+        python
+
+# Gettext
+RUN apk add --update libintl && \
+    apk add --virtual build_deps gettext &&  \
+    cp /usr/bin/envsubst /usr/local/bin/envsubst && \
+    apk --purge -v del build_deps
 
 # Install Gulp & Sass
 RUN npm install -g --loglevel=warn --unsafe-perm \
