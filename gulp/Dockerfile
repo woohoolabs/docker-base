@@ -31,7 +31,7 @@ RUN npm install -g --loglevel=warn --unsafe-perm \
     gulp@${GULP_VERSION}
 
 # Permissions
-RUN chmod +x /build/permissions.sh && \
+RUN chmod +x /build/*.sh && \
     /build/permissions.sh
 
 # Clean
