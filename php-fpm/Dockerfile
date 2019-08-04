@@ -11,13 +11,12 @@ ENV PATH /composer/vendor/bin:/code:/code/vendor/bin:$PATH
 
 COPY ./php/build /build
 
-RUN /build/system.sh && \
+RUN chmod +x /build/*.sh && \
+    /build/system.sh && \
     /build/gettext.sh && \
     COMPOSER_VERSION=${COMPOSER_VERSION} REDIS_VERSION=${PHP_REDIS_VERSION} IMAGICK_VERSION=${PHP_IMAGICK_VERSION} PRESTISSIMO_VERSION=${PHP_PRESTISSIMO_VERSION} /build/php.sh && \
     /build/msmtp.sh && \
-    chmod +x /build/permissions.sh && \
     /build/permissions.sh && \
-    chmod +x /build/clean.sh && \
     /build/clean.sh
 
 RUN /build/ensure.sh && \
