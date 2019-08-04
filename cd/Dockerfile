@@ -17,11 +17,12 @@ RUN set -eux; \
 
 # Install Terraform
 RUN set -eux; \
-    apk add --no-cache wget unzip && \
-    wget --no-check-certificate "https://releases.hashicorp.com/terraform/${TERRAFORM_VERSION}/terraform_${TERRAFORM_VERSION}_linux_amd64.zip" -O "/tmp/terraform.zip" && \
+    apk add --no-cache wget unzip ca-certificates libc6-compat && \
+    wget "https://releases.hashicorp.com/terraform/${TERRAFORM_VERSION}/terraform_${TERRAFORM_VERSION}_linux_amd64.zip" -O "/tmp/terraform.zip" && \
     unzip -o /tmp/terraform.zip -d /usr/local/bin && \
-    mkdir -p /home/gitlab-runner/.terraform.d/plugins/ && \
-    wget --no-check-certificate "https://github.com/phillbaker/terraform-provider-mailgunv3/releases/download/v${TERRAFORM_MAILGUN_VERSION}/terraform-provider-mailgunv3_v${TERRAFORM_MAILGUN_VERSION}_linux_amd64" -O "/home/gitlab-runner/.terraform.d/plugins/terraform-provider-mailgunv3_v${TERRAFORM_MAILGUN_VERSION}" && \
+    mkdir -p /root/.terraform.d/plugins/ && \
+    wget "https://github.com/phillbaker/terraform-provider-mailgunv3/releases/download/v${TERRAFORM_MAILGUN_VERSION}/terraform-provider-mailgunv3_v${TERRAFORM_MAILGUN_VERSION}_linux_amd64_static" -O "/root/.terraform.d/plugins/terraform-provider-mailgunv3_v${TERRAFORM_MAILGUN_VERSION}" && \
+    chmod +x /root/.terraform.d/plugins/terraform-provider-mailgunv3_v${TERRAFORM_MAILGUN_VERSION} && \
     apk --purge -v del wget unzip
 
 # Install AWS CLI
