@@ -1,4 +1,6 @@
 FROM php:7.4.0beta1-cli-alpine3.10
+
+FROM docker:19.03.1
 MAINTAINER Mate Kocsis <kocsismate@woohoolabs.com>
 
 ARG TERRAFORM_VERSION=0.12.6
@@ -36,6 +38,17 @@ RUN set -eux; \
         py-pip \
         python-dev
 
+RUN apk add --no-cache --virtual .build-deps \
+		argon2-dev \
+		coreutils \
+		curl-dev \
+		libedit-dev \
+		libsodium-dev \
+		libxml2-dev \
+		oniguruma-dev
+
+COPY --from=0 /usr/local/bin/php /usr/local/bin/php
+
 # Permissions
 RUN set -eux; \
     mkdir -p /code && \
@@ -55,6 +68,7 @@ RUN set -eux; \
     git --version && \
     make --version && \
     terraform -v && \
-    aws --version
+    aws --version && \
+    php --version
 
 WORKDIR /code
