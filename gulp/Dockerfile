@@ -16,6 +16,7 @@ RUN apk add --no-cache \
         libjpeg-turbo-dev \
         libpng-dev \
         make \
+        musl \
         nasm \
         optipng \
         python
