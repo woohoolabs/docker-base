@@ -36,7 +36,7 @@ curl -sS https://getcomposer.org/installer | php -- \
     --install-dir=/usr/local/bin \
     --filename=composer \
     --version=${COMPOSER_VERSION} && \
-composer global require --no-cache hirak/prestissimo:${PRESTISSIMO_VERSION}
+composer global require hirak/prestissimo:${PRESTISSIMO_VERSION}
 
 apk --purge -v del \
     autoconf \

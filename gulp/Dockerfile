@@ -27,7 +27,7 @@ RUN apk add --update libintl && \
     cp /usr/bin/envsubst /usr/local/bin/envsubst && \
     apk --purge -v del build_deps
 
-# Install Gulp & Sass
+# Install Gulp
 RUN npm install -g --loglevel=warn --unsafe-perm \
     gulp@${GULP_VERSION}
 

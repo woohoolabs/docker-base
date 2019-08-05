@@ -1,5 +1,13 @@
 # GULP
 
+## 6.0.0 - 2019-08-06
+
+- Updated NodeJS to 12.7.0
+- Updated Gulp to 4.0.2
+- Removed Ruby
+- Removed Sass
+- Removed Compass
+
 ## 5.0.0 - 2019-06-22
 
 - Updated NodeJS to 12.4.0

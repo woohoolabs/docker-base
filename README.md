@@ -7,8 +7,10 @@ This repo contains scripts necessary for building the following base images:
 |                Image                |                                Pulls                               |
 |:-----------------------------------:|--------------------------------------------------------------------|
 | [Beanstalkd][link-beanstalkd-image] | [![Beanstalkd Pulls][ico-beanstalkd-pulls]][link-beanstalkd-image] |
+| [CD][link-cd-image]                 | [![PHP Pulls][ico-cd-pulls]][link-cd-image]                        |
 | [Gulp][link-gulp-image]             | [![Gulp Pulls][ico-gulp-pulls]][link-gulp-image]                   |
-| [PHP][link-php-image]               | [![PHP Pulls][ico-php-pulls]][link-php-image]                      |
+| [PHP-FPM][link-php-fpm-image]       | [![PHP Pulls][ico-php-fpm-pulls]][link-php-fpm-image]              |
+| [PHP-CLI][link-php-cli-image]       | [![PHP Pulls][ico-php-cli-pulls]][link-php-cli-image]              |
 
 ### Beanstalkd
 
@@ -16,23 +18,34 @@ This image is based on Debian Stretch (9.1) and it contains the following progra
 
 - Beanstalkd 1.10
 
+### CD
+
+This image is based on the Alpine-based Docker (19.03.1) and it contains the following programs:
+
+- Terraform 0.12.6 (+ Mailgun Provider 0.3.1)
+- AWS CLI 1.16.209
+- PHP 7.4.0-beta1
+
 ### Gulp
 
-This image is based on Node JS (8.4) and it contains the following programs:
+This image is based on the Alpine-based Node JS (12.7) and it contains the following programs:
 
-- NPM 5.4.0
-- Ruby 2.4.1
-- Bundler 1.5.9
-- Sass 3.4.24
-- Gulp 3.9.1
+- Gulp 4.0.2
 
-### PHP
+### PHP-FPM
 
-This image is based on PHP (7.2.1) and it contains the following programs:
+This image is based on the Alpine-based PHP (7.4.0-beta1) and it contains the following programs:
 
-- Various PHP extensions (apcu, bcmath, blackfire, bz2, curl, gettext, imagick, intl, json, mbstring, mysqli, new relic, opcache, pdo_mysql, redis, timezonedb)
-- Composer 1.6.0 (+ Prestissimo 0.3.7)
-- MySQL client 5.7
+- Various PHP extensions (FPM, bcmath, bz2, curl, gettext, imagick, intl, mbstring, pdo_mysql, redis, timezonedb)
+- Composer 1.9.0 (+ Prestissimo 0.3.8)
+- Various utilities (curl, gettext, git, msmtp, unzip, wget, wkhtmltopdf)
+
+### PHP-FPM
+
+This image is based on the Alpine-based PHP (7.4.0-beta1) and it contains the following programs:
+
+- Various PHP extensions (bcmath, bz2, curl, gettext, imagick, intl, mbstring, pdo_mysql, redis, timezonedb)
+- Composer 1.9.0 (+ Prestissimo 0.3.8)
 - Supervisor 3.3.1
 - Various utilities (curl, gettext, git, msmtp, unzip, wget, wkhtmltopdf)
 
@@ -42,10 +55,10 @@ You can use the `build.sh` script in order to build images by passing the image 
 For example
 
 ```bash
-./build.sh php 4 2 2
+./build.sh php 7 4 0
 ```
 
-The script will then build the "woohoolabs/php:4.2.2" image. If you are satisfied with the result, you can choose to
+The script will then build the "woohoolabs/php:7.4.0" image. If you are satisfied with the result, you can choose to
 tag it (by answering "y" to the first question) and publish it to Docker Hub by also answering "y" to the second question.
 
 ## Change Log
@@ -69,12 +82,16 @@ Please see [SUPPORT](SUPPORT.md) for details.
 
 The MIT License (MIT). Please see the [License File](LICENSE.md) for more information.
 
-[ico-php-pulls]: https://img.shields.io/docker/pulls/woohoolabs/php.svg
 [ico-beanstalkd-pulls]: https://img.shields.io/docker/pulls/woohoolabs/beanstalkd.svg
+[ico-cd-pulls]: https://img.shields.io/docker/pulls/woohoolabs/cd.svg
 [ico-gulp-pulls]: https://img.shields.io/docker/pulls/woohoolabs/gulp.svg
+[ico-php-cli-pulls]: https://img.shields.io/docker/pulls/woohoolabs/php-cli.svg
+[ico-php-fpm-pulls]: https://img.shields.io/docker/pulls/woohoolabs/php-fpm.svg
 
-[link-php-image]: https://hub.docker.com/r/woohoolabs/php/
-[link-beanstalkd-image]: https://hub.docker.com/r/woohoolabs/beanstalkd/
-[link-gulp-image]: https://hub.docker.com/r/woohoolabs/gulp/
+[link-beanstalkd-image]: https://cloud.docker.com/u/woohoolabs/repository/docker/woohoolabs/beanstalkd
+[link-cd-image]: https://cloud.docker.com/u/woohoolabs/repository/docker/woohoolabs/cd
+[link-gulp-image]: https://cloud.docker.com/u/woohoolabs/repository/docker/woohoolabs/gulp
+[link-php-cli-image]: https://cloud.docker.com/u/woohoolabs/repository/docker/woohoolabs/php-cli
+[link-php-fpm-image]: https://cloud.docker.com/u/woohoolabs/repository/docker/woohoolabs/php-fpm
 [link-author]: https://github.com/kocsismate
 [link-contributors]: ../../contributors
