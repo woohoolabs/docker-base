@@ -1,5 +1,9 @@
 # PHP
 
+## 7.4.0-beta2 - 2019-08-16
+
+- Updated PHP to 7.4.0 beta2
+
 ## 7.4.0-beta1 - 2019-08-06
 
 - Changed base image to be Alpine-based
