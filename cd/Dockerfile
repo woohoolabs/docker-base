@@ -1,4 +1,4 @@
-FROM php:7.4.0beta1-cli-alpine3.10
+FROM php:7.4.0RC3-cli-alpine3.10
 
 FROM docker:19.03.1
 MAINTAINER Mate Kocsis <kocsismate@woohoolabs.com>
