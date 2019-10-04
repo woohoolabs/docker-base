@@ -22,9 +22,9 @@ This image is based on Debian Stretch (9.1) and it contains the following progra
 
 This image is based on the Alpine-based Docker (19.03.1) and it contains the following programs:
 
-- Terraform 0.12.6 (+ Mailgun Provider 0.3.1)
-- AWS CLI 1.16.209
-- PHP 7.4.0-beta1
+- Terraform 0.12.9 (+ Mailgun Provider 0.3.1)
+- AWS CLI 1.16.254
+- PHP 7.4.0 RC3
 
 ### Gulp
 
@@ -34,7 +34,7 @@ This image is based on the Alpine-based Node JS (12.7) and it contains the follo
 
 ### PHP-FPM
 
-This image is based on the Alpine-based PHP (7.4.0-beta1) and it contains the following programs:
+This image is based on the Alpine-based PHP (7.4.0 RC3) and it contains the following programs:
 
 - Various PHP extensions (FPM, bcmath, bz2, curl, gettext, imagick, intl, mbstring, pdo_mysql, redis, timezonedb)
 - Composer 1.9.0 (+ Prestissimo 0.3.8)
@@ -42,7 +42,7 @@ This image is based on the Alpine-based PHP (7.4.0-beta1) and it contains the fo
 
 ### PHP-FPM
 
-This image is based on the Alpine-based PHP (7.4.0-beta1) and it contains the following programs:
+This image is based on the Alpine-based PHP (7.4.0 RC3) and it contains the following programs:
 
 - Various PHP extensions (bcmath, bz2, curl, gettext, imagick, intl, mbstring, pdo_mysql, redis, timezonedb)
 - Composer 1.9.0 (+ Prestissimo 0.3.8)

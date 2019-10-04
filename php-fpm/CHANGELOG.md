@@ -1,5 +1,9 @@
 # PHP
 
+## 7.4.0RC3 - 2019-10-04
+
+- Updated PHP to 7.4.0 RC3
+
 ## 7.4.0RC1 - 2019-09-05
 
 - Updated PHP to 7.4.0 RC1
