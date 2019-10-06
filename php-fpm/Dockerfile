@@ -24,5 +24,7 @@ RUN /build/ensure.sh && \
 
 WORKDIR /code
 
+USER www-data
+
 EXPOSE 9000
 CMD php-fpm

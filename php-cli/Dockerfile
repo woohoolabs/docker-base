@@ -27,4 +27,6 @@ RUN /build/supervisor.sh && \
 
 WORKDIR /code
 
+USER www-data
+
 CMD php
