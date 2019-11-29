@@ -20,11 +20,11 @@ This image is based on Debian Stretch (9.1) and it contains the following progra
 
 ### CD
 
-This image is based on the Alpine-based Docker (19.03.1) and it contains the following programs:
+This image is based on the Alpine-based Docker (19.03.5) and it contains the following programs:
 
-- Terraform 0.12.9 (+ Mailgun Provider 0.3.1)
-- AWS CLI 1.16.254
-- PHP 7.4.0 RC3
+- Terraform 0.12.9 (+ Mailgun Provider 0.3.2)
+- AWS CLI 1.16.292
+- PHP 7.4.0
 
 ### Gulp
 
@@ -34,18 +34,18 @@ This image is based on the Alpine-based Node JS (12.7) and it contains the follo
 
 ### PHP-FPM
 
-This image is based on the Alpine-based PHP (7.4.0 RC3) and it contains the following programs:
+This image is based on the Alpine-based PHP (7.4.0) and it contains the following programs:
 
 - Various PHP extensions (FPM, bcmath, bz2, curl, gettext, imagick, intl, mbstring, pdo_mysql, redis, timezonedb)
-- Composer 1.9.0 (+ Prestissimo 0.3.8)
+- Composer 1.9.1 (+ Prestissimo 0.3.9)
 - Various utilities (curl, gettext, git, msmtp, unzip, wget, wkhtmltopdf)
 
 ### PHP-FPM
 
-This image is based on the Alpine-based PHP (7.4.0 RC3) and it contains the following programs:
+This image is based on the Alpine-based PHP (7.4.0) and it contains the following programs:
 
 - Various PHP extensions (bcmath, bz2, curl, gettext, imagick, intl, mbstring, pdo_mysql, redis, timezonedb)
-- Composer 1.9.0 (+ Prestissimo 0.3.8)
+- Composer 1.9.1 (+ Prestissimo 0.3.9)
 - Supervisor 3.3.1
 - Various utilities (curl, gettext, git, msmtp, unzip, wget, wkhtmltopdf)
 

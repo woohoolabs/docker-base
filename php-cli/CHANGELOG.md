@@ -1,5 +1,12 @@
 # PHP
 
+## 7.4.0 - 2019-11-29
+
+- Updated PHP to 7.4.0
+- Updated Redis extension to 5.1.1
+- Updated Composer to 1.9.1
+- Updated Prestissimo plugin to 0.3.9
+
 ## 7.4.0RC3 - 2019-10-04
 
 - Updated PHP to 7.4.0 RC3
