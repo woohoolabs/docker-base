@@ -1,5 +1,5 @@
 FROM node:12.7.0-alpine
-MAINTAINER Mate Kocsis <kocsismate@woohoolabs.com>
+MAINTAINER Máté Kocsis <kocsismate@woohoolabs.com>
 
 ARG GULP_VERSION=4.0.2
 

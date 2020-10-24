@@ -1,5 +1,13 @@
 # CD
 
+## 2.0.0 - 2020-10-24
+
+- Update Docker to 20.10
+- Update PHP to 8.0.0
+- Update Terraform to 0.13.5
+- Removed Terraform Mailgun provider
+- Update AWS CLI to 1.18.164
+
 ## 1.2.0 - 2019-11-29
 
 - Update Docker to 19.03.5

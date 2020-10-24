@@ -1,5 +1,5 @@
 FROM debian:9.1
-MAINTAINER Mate Kocsis <kocsismate@woohoolabs.com>
+MAINTAINER Máté Kocsis <kocsismate@woohoolabs.com>
 
 COPY ./build /build
 RUN chmod -R ug+x /build && \

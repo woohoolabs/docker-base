@@ -1,5 +1,14 @@
 # PHP
 
+## 8.0.0 RC2 - 2020-10-24
+
+- Updated PHP to 8.0.0 RC2
+- Updated Redis extension to 5.1.2
+- Enabled GD extension
+- Temporarily disabled Imagick
+- Updated Composer to 2.0.1
+- Removed Prestissimo plugin
+
 ## 7.4.0 - 2019-11-29
 
 - Updated PHP to 7.4.0

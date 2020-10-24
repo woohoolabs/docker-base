@@ -1,11 +1,10 @@
-FROM php:7.4.0-cli-alpine3.10
+FROM php:8.0.0RC2-cli-alpine3.12
 
-FROM docker:19.03.5
-MAINTAINER Mate Kocsis <kocsismate@woohoolabs.com>
+FROM docker:20.10-rc
+MAINTAINER Máté Kocsis <kocsismate@woohoolabs.com>
 
-ARG TERRAFORM_VERSION=0.12.16
-ARG TERRAFORM_MAILGUN_VERSION=0.3.2
-ARG AWS_CLI_VERSION=1.16.292
+ARG TERRAFORM_VERSION=0.13.5
+ARG AWS_CLI_VERSION=1.18.164
 
 ENV TF_IN_AUTOMATION=true
 ENV PATH $PATH:/opt/terraform:/root/.local/bin/
@@ -13,39 +12,36 @@ ENV PATH $PATH:/opt/terraform:/root/.local/bin/
 # Install system dependencies
 RUN set -eux; \
     apk add --no-cache \
+        ca-certificates \
+        curl \
         git \
+        libc6-compat\
         make \
-        openntpd
+        openntpd \
+        unzip
 
 # Install Terraform
 RUN set -eux; \
-    apk add --no-cache wget unzip ca-certificates libc6-compat && \
-    wget "https://releases.hashicorp.com/terraform/${TERRAFORM_VERSION}/terraform_${TERRAFORM_VERSION}_linux_amd64.zip" -O "/tmp/terraform.zip" && \
+    curl "https://releases.hashicorp.com/terraform/${TERRAFORM_VERSION}/terraform_${TERRAFORM_VERSION}_linux_amd64.zip" -o "/tmp/terraform.zip" && \
     unzip -o /tmp/terraform.zip -d /usr/local/bin && \
-    mkdir -p /root/.terraform.d/plugins/ && \
-    wget "https://github.com/phillbaker/terraform-provider-mailgunv3/releases/download/v${TERRAFORM_MAILGUN_VERSION}/terraform-provider-mailgunv3_v${TERRAFORM_MAILGUN_VERSION}_linux_amd64_static" -O "/root/.terraform.d/plugins/terraform-provider-mailgunv3_v${TERRAFORM_MAILGUN_VERSION}" && \
-    chmod +x /root/.terraform.d/plugins/terraform-provider-mailgunv3_v${TERRAFORM_MAILGUN_VERSION} && \
-    apk --purge -v del wget unzip
+    rm -rf /tmp/terraform.zip
 
 # Install AWS CLI
 RUN set -eux; \
     apk add --no-cache \
-        python \
-        python-dev \
+        python3 \
+        python3-dev \
         py-pip && \
-    pip install awscli==$AWS_CLI_VERSION --upgrade --user && \
-    apk --purge -v del \
-        py-pip \
-        python-dev
+    pip install awscli==$AWS_CLI_VERSION --upgrade --user
 
 RUN apk add --no-cache --virtual .build-deps \
-		argon2-dev \
-		coreutils \
-		curl-dev \
-		libedit-dev \
-		libsodium-dev \
-		libxml2-dev \
-		oniguruma-dev
+    argon2-dev \
+    coreutils \
+    curl-dev \
+    libedit-dev \
+    libsodium-dev \
+    libxml2-dev \
+    oniguruma-dev
 
 COPY --from=0 /usr/local/bin/php /usr/local/bin/php
 
