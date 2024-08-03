@@ -12,7 +12,10 @@ RUN apt-get update && apt-get install -y \
     gettext-base \
     g++ \
     gifsicle \
+    libjpeg-dev \
     libpng-dev \
+    nasm \
+    optipng \
     python3.6 \
     zlib1g-dev
 
