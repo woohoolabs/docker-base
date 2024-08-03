@@ -1,10 +1,10 @@
-FROM php:8.0.0RC2-cli-alpine3.12
+FROM php:8.4.0alpha2-cli-alpine3.20
 
-FROM docker:20.10-rc
+FROM docker:27.1.0-cli-alpine3.20
 MAINTAINER Máté Kocsis <kocsismate@woohoolabs.com>
 
-ARG TERRAFORM_VERSION=0.13.5
-ARG AWS_CLI_VERSION=1.18.164
+ARG TERRAFORM_VERSION=1.9.2
+ARG AWS_CLI_VERSION=2.17.15
 
 ENV TF_IN_AUTOMATION=true
 ENV PATH $PATH:/opt/terraform:/root/.local/bin/

@@ -20,11 +20,11 @@ This image is based on Debian Stretch (9.1) and it contains the following progra
 
 ### CD
 
-This image is based on the Alpine-based Docker (20.10), and it contains the following programs:
+This image is based on the Alpine-based Docker (27.1.0), and it contains the following programs:
 
-- Terraform 0.13.5
-- AWS CLI 3.12.0
-- PHP 8.0.0
+- Terraform 1.9.2
+- AWS CLI 2.17.15
+- PHP 8.4.0
 
 ### Gulp
 
@@ -34,20 +34,24 @@ This image is based on the Alpine-based Node JS (12.7), and it contains the foll
 
 ### PHP-CLI
 
-This image is based on the Alpine-based PHP (8.0.0), and it contains the following programs:
+This image is based on the Alpine-based PHP (8.4.0), and it contains the following programs:
 
-- Various PHP extensions (FPM, bcmath, bz2, curl, gd, gettext, imagick, intl, mbstring, pdo_mysql, redis, timezonedb)
-- Composer 2.0.1
+- Various PHP extensions (FPM, bcmath, bz2, curl, gd, gettext, intl, mbstring, pdo_mysql, redis, timezonedb)
+- Composer 2.7.7
 - Various utilities (curl, gettext, git, msmtp, unzip, wget, wkhtmltopdf)
 
 ### PHP-FPM
 
-This image is based on the Alpine-based PHP (8.0.0), and it contains the following programs:
+This image is based on the Alpine-based PHP (8.4.0), and it contains the following programs:
 
-- Various PHP extensions (bcmath, bz2, curl, gd, gettext, imagick, intl, mbstring, pdo_mysql, redis, timezonedb)
-- Composer 2.0.1
+- Various PHP extensions (bcmath, bz2, curl, gd, gettext, intl, mbstring, pdo_mysql, redis, timezonedb)
+- Composer 2.7.7
 - Supervisor 3.3.1
 - Various utilities (curl, gettext, git, msmtp, unzip, wget, wkhtmltopdf)
+
+## Setup
+
+Copy `.env.dist` file as `.env` and update the credentials.
 
 ## Usage
 
@@ -55,10 +59,10 @@ You can use the `build.sh` script in order to build images by passing the image 
 For example
 
 ```bash
-./build.sh php 8 0 0
+./build.sh php-fpm 8 4 0
 ```
 
-The script will then build the "woohoolabs/php:7.4.0" image. If you are satisfied with the result, you can choose to
+The script will then build the "woohoolabs/php-fpm:8.4.0" image. If you are satisfied with the result, you can choose to
 tag it (by answering "y" to the first question) and publish it to Docker Hub by also answering "y" to the second question.
 
 ## Change Log

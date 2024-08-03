@@ -1,5 +1,12 @@
 # CD
 
+## 3.0.0 - 2024-07-23
+
+- Update Docker to 27.1.0
+- Update PHP to 8.4.0 alpha2
+- Update Terraform to 1.9.2
+- Update AWS CLI to 2.17.15
+
 ## 2.0.0 - 2020-10-24
 
 - Update Docker to 20.10

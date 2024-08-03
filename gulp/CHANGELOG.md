@@ -1,5 +1,10 @@
 # GULP
 
+## 7.0.0 - 2024-07-23
+
+- Updated NodeJS to 12.7.0
+- Updated Gulp to 5.0.0
+
 ## 6.0.0 - 2019-08-06
 
 - Updated NodeJS to 12.7.0

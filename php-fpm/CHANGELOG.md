@@ -1,5 +1,13 @@
 # PHP
 
+## 8.4.0 Alpha2 - 2024-07-23
+
+- Updated Alpine Linux to 3.20
+- Updated PHP to 8.4.0 alpha2
+- Updated Redis extension to 6.0.2
+- Updated Composer to 2.7.7
+- Removed the wkhtmltopdf package
+
 ## 8.0.0 RC2 - 2020-10-24
 
 - Updated PHP to 8.0.0 RC2

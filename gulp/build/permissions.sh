@@ -1,11 +1,13 @@
-#!/bin/sh
+#!/bin/bash
 set -eux
 
-addgroup -g 82 gulp
-adduser -u 82 --system -G gulp gulp
-
-chown -R root:root /usr/local/lib/node_modules
+function set_permissions_recursive() {
+    mkdir -p $1
+    chown -R root:www-data $1
+    chmod -R 775 $1
+}
 
 mkdir -p /code
-chown -R root:root /code
-chmod -R 775 /code
+
+set_permissions_recursive /usr/local/lib/node_modules
+set_permissions_recursive /code

@@ -6,5 +6,4 @@ apk add --no-cache \
     git \
     gnupg \
     openntpd \
-    xvfb \
-    wkhtmltopdf
+    xvfb

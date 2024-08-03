@@ -16,7 +16,3 @@ composer --version
 echo -e "\nMSMTP"
 echo "------------------------------------------------------------"
 msmtp --version
-
-echo -e "\nwkhtmltopdf"
-echo "------------------------------------------------------------"
-wkhtmltopdf --version

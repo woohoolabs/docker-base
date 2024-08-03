@@ -30,6 +30,9 @@ then
     exit 1
 fi
 
+source .env
+docker login -u $DOCKER_USERNAME -p$DOCKER_PASSWORD
+
 docker push woohoolabs/$1:$2.$3.$4
 docker push woohoolabs/$1:$2.$3
 docker push woohoolabs/$1:$2
