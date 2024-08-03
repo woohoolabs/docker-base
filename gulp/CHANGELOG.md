@@ -1,5 +1,9 @@
 # GULP
 
+## 7.0.0 - 2024-08-03
+
+- Re-added gettext
+- 
 ## 7.0.0 - 2024-07-23
 
 - Updated NodeJS to 12.7.0

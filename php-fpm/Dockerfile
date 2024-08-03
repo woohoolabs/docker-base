@@ -1,4 +1,4 @@
-FROM php:8.4.0alpha2-fpm-alpine3.20
+FROM php:8.3.10-fpm-alpine3.20
 MAINTAINER Máté Kocsis <kocsismate@woohoolabs.com>
 
 ARG COMPOSER_VERSION=2.7.7
